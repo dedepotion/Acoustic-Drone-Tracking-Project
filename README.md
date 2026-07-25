@@ -5,15 +5,15 @@ Poor recording conditions have heavily impacted the possible paths to detecting 
 
 
 ## Repository Structure
-Subject 25-26.pdf               PDF presenting the project
-Audio_Track-1..4.wav            Raw recordings from the 4-microphone array
-filtrage.m                      Zero-phase bandpass filtering of the raw tracks → Audiofiltre1..4.wav
-initialisation.mlx              Loads filtered audio, defines mic geometry, computes all pairwise τ via windowed cross-correlation
-DOA 12-34 mic pair.m            Takes pre-calculated time delays, computes the DOA angles for the 12-34 mic pairs per time window, and graphs the resulting 2D trajectory.
-Drone trajectory video.mp4      Video of the proposed drone trajectory resulting from the Direction of Arrival (DOA) method
-intensity_attempt.m             Attempt at localizing the drone from relative signal intensity/energy across the 4 microphones — not conclusive 
-DOA_any_mic_pair_attempt.m      Generalization of the DOA method to all microphone pair combinations (not just 12/34) — not conclusive 
-TDOA_attempt.m                  Attempt at TDOA multilateration: pairwise delays converted to hyperbolic constraints, solved via nonlinear least squares — not conclusive
+*  Subject 25-26.pdf               PDF presenting the project
+*  Audio_Track-1..4.wav            Raw recordings from the 4-microphone array
+*  filtrage.m                      Zero-phase bandpass filtering of the raw tracks → Audiofiltre1..4.wav
+*  initialisation.mlx              Loads filtered audio, defines mic geometry, computes all pairwise τ via windowed cross-correlation
+*  DOA 12-34 mic pair.m            Takes pre-calculated time delays, computes the DOA angles for the 12-34 mic pairs per time window, and graphs the resulting 2D trajectory.
+*  Drone trajectory video.mp4      Video of the proposed drone trajectory resulting from the Direction of Arrival (DOA) method
+*  intensity_attempt.m             Attempt at localizing the drone from relative signal intensity/energy across the 4 microphones — not conclusive 
+*  DOA_any_mic_pair_attempt.m      Generalization of the DOA method to all microphone pair combinations (not just 12/34) — not conclusive 
+*  TDOA_attempt.m                  Attempt at TDOA multilateration: pairwise delays converted to hyperbolic constraints, solved via nonlinear least squares — not conclusive
 
 
 ## Usage
